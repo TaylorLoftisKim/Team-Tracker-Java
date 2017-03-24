@@ -15,4 +15,8 @@ public class Member {
   public String getName() {
     return mMemberName;
   }
+
+  public static ArrayList<Member> all() {
+    return instances;
+  }
 }
