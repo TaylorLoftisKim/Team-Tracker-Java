@@ -1,8 +1,13 @@
-  <h1>Here are all of the Teams</h1>
-    <ul class="nav navbar-nav">
-      #foreach ($city in $cities)
-        <li><a href="/teams/$team.getId()">$team.getTeamName()</a></li>
-      #end
-      <li><a href="/teams/new">Add a new Team</a></li>
-      <li><a href="/job-openings">View all Members on this Team</a></li>
-    </ul>
+<div class="jumbotron">
+  <h1>Teams Currently Signed Up</h1>
+</div>
+<div class="jumbotron">
+  <h2>Teams:</h2>
+  #foreach ($team in $teams)
+    <h3><a href="/teams/$team.getId()">$team.getTeamName()</a></h3>
+  #end
+</div>
+<div class="jumbotron">
+  <h3><a href="/teams/new">Add a new Team</a></h3>
+  <h3><a href="/members">View all Members on this Team</a></h3>
+</div>

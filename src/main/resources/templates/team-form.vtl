@@ -1,14 +1,16 @@
-<h1>Add a Team</h1>
-
-<form action="/teams" method="post">
-  <input id="teamId" name="teamId" type="hidden" value="$team.getId()">
-
-  <div class="form-group">
-    <label for="name">What is the Team's name?</label>
-    <input id="name" name="name" type="text" class="form-control">
+<div class="jumbotron">
+  <h1>Add a Team</h1>
+</div>
+  <div class="well">
+    <form action="/teams" method="post">
+    <input id="teamId" name="teamId" type="hidden" value="$team.getId()">
+      <div class="form-group">
+        <label for="name">What is the Team's name?</label>
+        <input id="name" name="name" type="text" class="form-control">
+      </div>
   </div>
-
-  <a class="btn btn-danger" href="/teams">Go Back</a>
-  <button type="submit" class="btn btn-success">Add Team!</button>
-
+  <div class="well">
+    <a class="btn btn-danger" href="/">Go Back</a>
+    <button type="submit" class="btn btn-success">Add Team!</button>
+  </div>
 </form>
