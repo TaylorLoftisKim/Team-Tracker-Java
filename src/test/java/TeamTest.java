@@ -32,9 +32,16 @@ public class TeamTest {
   }
 
   @Test
-  public void getId_TeamInstantiatesWithAnId_1() {
+  public void getId_teamInstantiatesWithAnId_1() {
     Team.clear();
     Team myTeam = new Team("Epicoders");
     assertEquals(1, myTeam.getId());
+  }
+
+  @Test
+  public void find_returnsTeamWithSameId_myTeam2() {
+    Team myTeam1 = new Team("Epicoders");
+    Team myTeam2 = new Team("C Sharpers");
+    assertEquals(Team.find(myTeam2.getId()), myTeam2);
   }
 }

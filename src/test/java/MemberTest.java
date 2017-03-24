@@ -31,7 +31,7 @@ public class MemberTest {
   }
 
   @Test
-  public void getId_MemberInstantiatesWithAnId_1() {
+  public void getId_memberInstantiatesWithAnId_1() {
     Member.clear();
     Member myMember = new Member("Taylor");
     assertEquals(1, myMember.getId());
