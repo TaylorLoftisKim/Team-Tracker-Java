@@ -23,4 +23,8 @@ public class Member {
   public static void clear() {
     instances.clear();
   }
+
+  public int getId() {
+    return mId;
+  }
 }
