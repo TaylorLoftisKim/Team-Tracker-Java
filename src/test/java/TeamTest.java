@@ -23,4 +23,11 @@ public class TeamTest {
     assertEquals(true, Team.all().contains(testTeam1));
     assertEquals(true, Team.all().contains(testTeam2));
   }
+
+  @Test
+  public void clear_emptiesAllTeamsFromArrayList() {
+    Team testTeam = new Team("Epicoders");
+    Team.clear();
+    assertEquals(0, Team.all().size());
+  }
 }

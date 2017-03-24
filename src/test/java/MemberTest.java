@@ -24,7 +24,7 @@ public class MemberTest {
   }
 
   @Test
-  public void clear_emptiesAllMembersFromArrayList() {
+  public void clear_emptiesAllMembersFromArrayList_0() {
     Member myMember = new Member("Taylor");
     Member.clear();
     assertEquals(0, Member.all().size());
