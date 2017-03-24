@@ -30,4 +30,11 @@ public class TeamTest {
     Team.clear();
     assertEquals(0, Team.all().size());
   }
+
+  @Test
+  public void getId_TeamInstantiatesWithAnId_1() {
+    Team.clear();
+    Team myTeam = new Team("Epicoders");
+    assertEquals(1, myTeam.getId());
+  }
 }
