@@ -2,8 +2,9 @@
  <h1>$team.getTeamName()</h1>
 </div>
   <div class="well">
-    #foreach($member in $team.getMember())
-    <h3><a href="/members/$member.getId()">$member.getMember()</a></h3>
+    <h2>Members:</h2><br>
+    #foreach($member in $team.getMembers())
+    <h3>$member.getName()</h3>
     #end
   </div>
   <div class="well">

@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1>Create New Member for team "$team.getTeamName()"</h1>
+</div>
+<div class="well">
+  <form action="/members" method="post">
+    <input id="teamId" name="teamId" type="hidden" value="$team.getId()">
+</div>
+<div class="well">
+  <div class="form-group">
+    <label for="member">Team Member's Name:</label>
+    <input id="member" name="member" type="text" class="form-control">
+  </div>
+</div>
+<div class="well">
+  <a class="btn btn-danger" href="/teams/$team.getId()">Back</a>
+  <button type="submit" class="btn btn-success">Add new Member</button>
+</div>

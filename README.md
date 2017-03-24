@@ -1,11 +1,11 @@
-# _ProjectName_
+# _Team Tracker_
 
-#### _ProjectName, 03-24-2017_
+#### _Team Tracker, 03-24-2017_
 
 #### By _**Taylor Loftis-Kim**_
 
 ## Description
-_Example text for the description of the project_
+_This is an Application that Event Coordinators/Administrators can use to keep track of Teams and Team Members. Multiple Teams can be added to the Roster, as well Team Members. _
 
 
 ## Specifications
