@@ -17,7 +17,7 @@ public class TeamTest {
   }
 
   @Test
-  public void all_returnsAllInstancesOTeams_true() {
+  public void all_returnsAllInstancesOfTeams_true() {
     Team testTeam1 = new Team("Epicoders");
     Team testTeam2 = new Team("C Sharpers");
     assertEquals(true, Team.all().contains(testTeam1));
