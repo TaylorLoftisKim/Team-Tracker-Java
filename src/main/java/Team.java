@@ -34,6 +34,10 @@ public class Team {
     return instances.get(id -1);
   }
 
+  public List<Member> getMembers() {
+    return mMembers;
+  }
+
   public void addMember(Member member) {
     mMembers.add(member);
   }

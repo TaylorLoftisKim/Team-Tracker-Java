@@ -44,4 +44,11 @@ public class TeamTest {
     Team myTeam2 = new Team("C Sharpers");
     assertEquals(Team.find(myTeam2.getId()), myTeam2);
   }
+
+  @Test
+  public void getMembers_initiallyReturnsEmptyList_ArraryList() {
+    Team.clear();
+    Team testTeam = new Team("Epicoders");
+    assertEquals(0, testTeam.getMembers().size());
+  }
 }
