@@ -15,4 +15,12 @@ public class TeamTest {
     Team testTeam = new Team("Epicoders");
     assertEquals("Epicoders", testTeam.getTeamName());
   }
+
+  @Test
+  public void all_returnsAllInstancesOTeams_true() {
+    Team testTeam1 = new Team("Epicoders");
+    Team testTeam2 = new Team("C Sharpers");
+    assertEquals(true, Team.all().contains(testTeam1));
+    assertEquals(true, Team.all().contains(testTeam2));
+  }
 }
